@@ -14,7 +14,7 @@ namespace TinyCrm
         public string VatNumber { get; set; }
         public decimal TotalGross { get; set; }
         public bool IsActive { get; set; }
-        public DateTime date { get; set; }
+        
 
         public Customer()
         {

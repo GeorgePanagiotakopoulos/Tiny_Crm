@@ -10,7 +10,7 @@ using TinyCrm;
 namespace TinyCrm.Migrations
 {
     [DbContext(typeof(TinyCrmDbContext))]
-    [Migration("20200507115229_Migration1")]
+    [Migration("20200507123846_Migration1")]
     partial class Migration1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -67,6 +67,9 @@ namespace TinyCrm.Migrations
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("ProductCategory")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ProductId");
 
