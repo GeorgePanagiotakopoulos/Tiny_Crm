@@ -64,7 +64,7 @@ namespace TinyCrm
                                 && c.CustomerId == customerOptions.CustomerId  
                                 && c.Created >= customerOptions.CreatedFrom 
                                 && c.Created <= customerOptions.CreatedTo )
-                    .Take(500)
+                    
                     .ToList();
 
                 return customer;
