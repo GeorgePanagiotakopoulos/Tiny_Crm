@@ -12,7 +12,7 @@ namespace TinyCrm
         {
             var tinyCrmDbContext = new TinyCrmDbContext();
 
-            // Insert
+            // Insert!
             var customer = new Customer()
             {
                 Firstname = "Xaris",
